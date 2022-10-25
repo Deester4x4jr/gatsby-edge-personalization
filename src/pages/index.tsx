@@ -140,7 +140,7 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        Congratulations
+        Congratulations Josh!
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
       </h1>
@@ -149,12 +149,9 @@ const IndexPage = () => {
         update in real-time. 😎
       </p>
       <ul style={doclistStyles}>
-        {docLinks.map(doc => (
-          <li key={doc.url} style={docLinkStyle}>
-            <a
-              style={linkStyle}
-              href={`${doc.url}?utm_source=starter&utm_medium=ts-docs&utm_campaign=minimal-starter-ts`}
-            >
+        {docLinks.map( doc => (
+          <li key={ doc.url } style={ docLinkStyle }>
+            <a style={ linkStyle } href={ `${doc.url}?utm_source=starter&utm_medium=ts-docs&utm_campaign=minimal-starter-ts` }>
               {doc.text}
             </a>
           </li>
